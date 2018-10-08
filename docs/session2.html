@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Augmented Reality: Session 2</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/whiteJGL.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Augmented Reality</h2>
+					<p>Joel Gethin Lewis</p>
+					<p>Session 2: Trying</p>
+				</section>
+				<section>
+					<h3>What I'm going to talk about today:</h3>
+					<ol>
+						<li>Glitch.com.</li>
+          				<li>A-Frame School.</li>
+          				<li>AR.js.</li>
+          				<li>p5.js and p5.geolocation.</li>
+					</ol>
+				</section>
+				<section>
+					<h3>1. <a href="https://glitch.com/">Glitch.com</a>.</h3>
+					<ul>
+						<li>"Glitch is the friendly community where everyone can discover & create the best stuff on the web". It's true!</li>
+						<li>Step 1: sign up to Glitch.com. Probably best to do so with non-school emails so you still have access later.</li>
+						<li>Step 2: let's try the <a href="https://glitch.com/featured/website-starter-kit/">website starter kit</a> all together.</li>
+						<li>Step 3: let's browse other <a href="https://glitch.com/featured/">featured projects</a> just for fun.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>2. A-Frame School.</h3>
+					<ul>
+						<li>Let's do the <a href="https://aframe.io/aframe-school/#/">A-Frame School</a> all together.</li>
+						<li>Step 1: go to https://aframe.io/aframe-school.</li>
+						<li>Step 2: let's work through it together.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>3. AR.js.</h3>
+					<ul>
+						<li>Let's see if we can make some fun things with <a href="https://github.com/jeromeetienne/ar.js">AR.js</a>.</li>
+						<li>Step 1: make a new Glitch project using the source code from: https://github.com/jeromeetienne/ar.js.</li>
+						<li>Step 2: customise it! What content would you like to add?</li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. p5.js and p5.geolocation.</h3>
+					<ul>
+						<li><a href="https://p5js.org/">p5.js</a> is great! It's what I recommend everyone to start with.</li>
+						<li>Let's watch the intro video together, which features Lauren McCarthy and Daniel Schiffman.</li>
+						<li><a href="https://github.com/bmoren/p5.geolocation">p5.geolocation</a> is a <a href="https://p5js.org/libraries/">library for p5.js</a> that allows you to get the GPS location of the user when they are using your software.</li>
+						<li>Let's try to display an image or play a sound when you are at a certain location. How should we do this?</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Thanks!</h2>
+					<ul>
+						<li>More about me: <a href="https://twitter.com/joelgethinlewis">@joelgethinlewis</a></li>
+						<li>Get in contact via: <a href="https://www.joelgethinlewis.com/">www.joelgethinlewis.com</a></li>
+						<li>Website:<br><a href="https://jgl.github.io/MANEAR2018/">https://jgl.github.io/MANEAR2018</a></li>
+						<li>Today's slides:<br><a href="https://jgl.github.io/MANEAR2018/session2.html">https://jgl.github.io/MANEAR2018/session2.html</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// Push each slide change to the browser history
+				history: true,
+				// Display a presentation progress bar
+				progress: true,
+				// Display the page number of the current slide
+				slideNumber: 'c/t',
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

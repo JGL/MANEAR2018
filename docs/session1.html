@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Augmented Reality: Session 1</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/whiteJGL.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Augmented Reality</h2>
+					<p>Joel Gethin Lewis</p>
+					<p>Session 1: Introduction</p>
+				</section>
+				<section>
+					<h3>What I'm going to talk about today:</h3>
+					<ol>
+			          <li>Introduce myself.</li>
+			          <li>The aim of this course.</li>
+			          <li>What is Virtual Reality? What is Augmented Reality?</li>
+			          <li>How can one experience VR or AR?</li>
+			          <li>Why web based AR is the way to go.</li>
+			          <li>The current web based AR ecosystem and demonstrations.</li>
+			          <li>Examples of Augmented Reality done right.</li>
+			          <li>Paper prototyping.</li>
+					</ol>
+				</section>
+				<section>
+					<h3>1. Introduce myself.</h3>
+					<ul>
+						<li>Born in London, grew up in Wales on a mountain.</li>
+						<li>BSc in Maths and Computer Science at <a href="http://www.imperial.ac.uk/">Imperial</a>, MA in Interaction Design at <a href="https://www.rca.ac.uk/">Royal College of Art</a>.</li>
+						<li>One year at <a href="http://www.fabrica.it/">Fabrica</a>.</li>
+						<li>Three years at <a href="http://uva.co.uk/">UnitedVisualArtists</a>.</li>
+						<li>Eight years at <a href="https://vimeo.com/hellicarandlewis">Hellicar&Lewis</a>.</li>
+						<li>Two years of teaching at CSM and RCA and <a href="https://joelgethinlewis.com/">working on my own projects</a>.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>2. The aim of this course.</h3>
+					<ul>
+						<li>I am going to teach you about some technologies, but only to allow you to think practically <b>and</b> creatively about AR.</li>
+						<li>Just creative thinking or just practical thinking is boring. The intersection is interesting.</li>
+						<li>No stupid questions, only stupid answers. So please ask in class or via email.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>3. What is Virtual Reality? What is Augmented Reality?</h3>
+					<ul>
+						<li>Virtual Reality (VR) is a technology that uses headsets and other devices to replace one or more human senses with artificial ones.</li>
+						<li>Augmented Reality (AR) is a technology that uses headsets and other devices to augment one or more human senses with artificial ones.</li>
+						<li>Other terms include Mixed Reality (MR, or the continuum between VR and AR) and Extended or Cross Reality (XR, which encompasses all perceptions).</li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR?</h3>
+					<ol>
+						<li>Window on the world.</li>
+						<li>VR headsets.</li>
+						<li>AR headsets.</li>
+					</ol>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR? Window on the world</h3>
+					<ul>
+						<li>The cheapest, simplest most direct method.</li>
+						<li>Works for both VR and AR.</li>
+						<li>Simply hold your smart phone or tablet and pan it around to explore the VR or AR world.</li>
+						<li>Both Apple and Google have released platforms for this functionality on iOS and Android (ARKit and ARCore).</li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR? Window on the world</h3>
+					<ul>
+						<li>ARCore Demo:
+						<br><iframe width="560" height="315" src="https://www.youtube.com/embed/ttdPqly4OF8?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR? Window on the world</h3>
+					<ul>
+						<li>ARKit Demo:
+						<br><iframe width="560" height="315" src="https://www.youtube.com/embed/LLRweyZ1KpA?rel=0&amp;start=73" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR? VR headsets</h3>
+					<ul>
+						<li>The most widespread method after window on the world.</li>
+						<li>Four main desktop platforms, but many others available: Vive (HTC and Valve), Rift (Oculus and Facebook), Playstation VR (Sony) and Windows VR (Microsoft). </li>
+						<li>Three main mobile platforms: Cardboard (Google backed, but works on iOS too), Gear (Samsung and Occulus) and Daydream (Google).</li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR? VR headsets</h3>
+					<ul>
+						<li>Job Simulator Demo (available on Vive, Rift and Playstation VR).
+						<br><iframe width="560" height="315" src="https://www.youtube.com/embed/8H9ieJk8AJ4?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR? VR headsets</h3>
+					<ul>
+						<li>Lone Echo Demo (available on Rift).
+						<br><iframe width="560" height="315" src="https://www.youtube.com/embed/2pmV2mwAV9k?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR? AR headsets</h3>
+					<ul>
+						<li>The most hyped method.</li>
+						<li>Two main platforms, but many others rumoured (Apple particularly): Hololens (Microsoft) and Leap One (Magic Leap). </li>
+						<li>Hololens has been available since 2016 to developers only, Leap One is shipping this year. Magic Leap is currently valued over $4.5 billion with over $1.8 billion invested to date (including Google, Alibaba and Warner Bros).</li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR? AR headsets</h3>
+					<ul>
+						<li>Hololens Demo.
+						<br><iframe width="560" height="315" src="https://www.youtube.com/embed/7Xv8A9vqeBw?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. How can one experience VR or AR? AR headsets</h3>
+					<ul>
+						<li>Magic Leap Demo.
+						<br><iframe width="560" height="315" src="https://www.youtube.com/embed/GmdXJy_IdNw?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></li>
+					</ul>
+				</section>
+				<section>
+					<h3>5. Why web based AR is the way to go.</h3>
+					<ul>
+						<li>Future proof - compatible with every major platform, open source and non proprietary, no lock in.</li>
+						<li>Widest possible audience - every recent smart phone and tablet, deployable to the entire world and accessible.</li>
+						<li>Cost effective - development uses open source tools, has the biggest community of developers and doesn't require purchase of new hardware.</li>
+						<li>Measurable - using existing web based analytical tools.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>6. The current web based AR ecosystem.</h3>
+					<ul>
+						<li><a href="https://aframe.io/">A-Frame</a>. Supported by Mozilla. Mainly VR.</li>
+						<li><a href="https://github.com/jeromeetienne/AR.js/blob/master/README.md">AR.js</a>. Developed by Jerome Etienne and others. Not really AR, more marker tracking.</li>
+						<li><a href="https://github.com/google-ar/three.ar.js">three.ar.js</a>. Developed by Google, built atop three.js (Ricardo Cabello aka Mr. Doob and others) ARKit (Apple) and ARCore (Google). <a href="https://developers.google.com/web/updates/2018/06/ar-for-the-web">Demos</a>.</li>
+						<li><a href="https://github.com/mozilla/three.xr.js/">three.xr.js</a>. Developed by Mozilla, built atop three.js,  ARKit (Apple) and ARCore (Google). <a href="https://mozilla.github.io/three.xr.js/">Demos</a>.</li>
+						<li><a href="https://github.com/mozilla/aframe-xr">aframe-xr</a>. Developed by Mozilla, built atop three.xr.js and A-Frame. <a href="https://mozilla.github.io/aframe-xr/">Demos</a>.</li>
+						<li><a href="https://github.com/chenzlabs/aframe-ar">aframe-ar</a>. Developed by chenzlabs, built atop three.ar.js and A-Frame. <a href="https://aframe-ar.glitch.me/">Demos</a>.</li>
+						<li>I ended up using A-Frame-XR, your mileage may vary. You'll need <a href="https://itunes.apple.com/us/app/webxr-viewer/id1295998056">XRViewer</a> (custom browser from Mozilla) to view <a href="https://examples.webxrexperiments.com/">demos</a> on your device.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>7. Web based demonstrations.</h3>
+					<ol>
+						<li><a href="https://aframe.io/">A-Frame on Cardboard and iOS</a>.</li>
+						<li><a href="https://aframe.io/">A-Frame on Daydream</a>.</li>
+						<li><a href="https://github.com/jeromeetienne/AR.js/blob/master/README.md">AR.js on iPhone</a>.</li>
+						<li><a href="https://developers.google.com/web/updates/2018/06/ar-for-the-web">WebXR on Android</a>.</li>
+						<li><a href="https://blog.mozvr.com/experimenting-with-computer-vision-in-webxr/">WebXR viewer on iOS</a>.</li>
+					</ol>
+				</section>
+				<section>
+					<h3>8. Examples of Augmented Reality done right.</h3>
+					<ul>
+						<li><a href="https://www.blasttheory.co.uk/projects/uncle-roy-all-around-you/">“Uncle Roy All Around You” by Blast Theory</a></li>
+						<li><a href="http://www.pacmanhattan.com/">“Pacmanhattan”</a> by students of <a href="https://tisch.nyu.edu/itp">ITP</a>.</li>
+						<li><a href="https://www.pokemongo.com">“Pokemon Go”</a> by <a href="https://nianticlabs.com/">Niantic Labs</a>.</li>
+						<li><a href="http://weareanagram.co.uk/project/nightwatchers/">“Nightwatchers” by Anagram</a>.</li>
+						<li><a href="https://vimeo.com/185018311">“Whispers” at the Tower of London by Hellicar&Lewis</a>.</li>
+						<li><a href=" https://wearecaper.com/portfolio/radio-3-music-walk/">“Radio 3 Music Walk” by Caper</a>.</li>
+						<li><a href="http://greyworld.org/?p=35">“Railings” by Greyworld</a>.</li>
+						<li><a href="http://www.the17.org/">“The 17” by Bill Drummond</a>.</li>
+						<li><a href="https://twitter.com/AndrewProjDent/status/888380207962443777">“ARKit + CoreLocation” by Andrew Dent</a>.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>9. Paper prototyping.</h3>
+					<h2>Paper Prototyping lets you ignore budget, ability and experience to get to the core of an idea quickly.</h2>
+					<p>N.B. Technology is NOT an idea.</p>
+				</section>
+				<section>
+					<h2>I want to teach you my method:</h2>
+					<ol>
+						<li>Find an interesting technology/method/approach/context.</li>
+						<li>Apply it to an experience in the real world.</li>
+						<li>Get the money/ability to make it happen.</li>
+					</ol>
+				</section>
+				<section>
+					<h2>2. is what you are going to learn today</h2>
+					<p>I'll find you a technology and I'm afraid I don't have any budget. (-;</p>
+					<ol>
+						<li><s>Find an interesting technology/method/approach/context.</s></li>
+						<li>Apply it to an experience in the real world.</li>
+						<li><s>Get the money/ability to make it happen.</s></li>
+					</ol>
+					<p>I want elevator pitches!</p>
+				</section>
+				<section>
+					<h2>Technology usually flows "downhill":</h2>
+					<p>Military -> Commercial -> Art -> The street.</p>
+					<p>This is changing - see the Singularity.</p>
+				</section>
+				<section>
+					<p>You are reality hackers!</p>
+				</section>
+				<section>
+					<p>Paper prototyping time!</p>
+				</section>
+				<section>
+					<h2>Brief 1: Smile</h2>
+					<p>and the whole world smiles with you...</p>
+				</section>
+				<section>
+					<h2>Auto Smiley</h2>
+					<iframe src="https://player.vimeo.com/video/10356980?title=0&byline=0&portrait=0" width="320" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<p>Project: <a href="http://fffff.at/auto-smiley/">Auto Smiley</a> by <a href="http://www.theowatson.com/">Theo Watson</a></p>
+				</section>
+				<section>
+					<h2>The Brief:</h2>
+					<p>You can detect smiles. What are you going to do with that?</p>
+					<p>Where could a smile be a useful switch?<br>What if many smiles were collected at once?</p>
+				</section>
+				<section>
+					<h2>Top tips:</h2>
+					<ol>
+						<li>Think of the setting</li>
+						<li>Sum it up in a sentence</li>
+						<li>Act the story</li>
+						<li>Write down all your ideas first - but only pick one idea - be an editor</li>
+						<li>Only one minute to present!</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Demonstration</h2>
+					<p>The Magic Hat.</p>
+				</section>
+				<section>
+					<h2>Go!</h2>
+					<p>15 minutes thinking time, 1 minute presentation.</p>
+				</section>
+				<section>
+					<h2>Brief 2: Drones</h2>
+					<p>I for one, welcome our robot overlords.</p>
+				</section>
+				<section>
+					<h2>Nanocopters</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/50Fdi7712KQ?rel=0" frameborder="0" allowfullscreen></iframe>
+					<p>Experiments performed with a team of nanocopters at the GRASP Lab, University of Pennsylvania.</p>
+				</section>
+				<section>
+					<h2>Drones for Performance</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/cseTX_rW3uM?rel=0" frameborder="0" allowfullscreen></iframe>
+					<p>Marshmallow Laser Feast installation for Advertising Director festival. Cannes, France, 2012.</p>
+				</section>
+				<section>
+					<h2>Drones for delivery</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/MXo_d6tNWuY?rel=0" frameborder="0" allowfullscreen></iframe>
+					<p>Amazon Prime Air</p>
+				</section>
+				<section>
+					<h2>Boston Dynamics Big Dog</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/cNZPRsrwumQ?rel=0" frameborder="0" allowfullscreen></iframe>
+					<p>The new sound of terror?</p>
+				</section>
+				<section>
+					<h2>Boston Dynamics Handle</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/-7xvqQeoA8c?rel=0" frameborder="0" allowfullscreen></iframe>
+					<p>With guns?</p>
+				</section>
+				<section>
+					<h2>Boston Dynamics Spot Mini</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/aFuA50H9uek?rel=0" frameborder="0" allowfullscreen></iframe>
+					<p>With a hand!</p>
+				</section>
+				<section>
+					<p>What kind of drone would you like?</p>
+				</section>
+				<section>
+					<h2>Go!</h2>
+					<p>15 minutes thinking time, one minute presentation.</p>
+				</section>
+				<section>
+					<h2>Brief 3: Human Hacking</h2>
+					<p>How would you redesign yourself?</p>
+				</section>
+				<section>
+					<h2>What if you had a tail?</h2>
+					<p><img src="content/tail_byTethus925.jpg" width="50%" height="50%"></p>
+					<p>New balance. Photo by <a href="https://flic.kr/p/5yV7NN">Tethus925</a>.</p>
+				</section>
+				<section>
+					<h2>What if could change your sex in real time?</h2>
+					<p><img src="content/cuttlefishByCulumBrown.jpg" width="50%" height="50%"></p>
+					<p>Male cuttlefish (right) courting a female (left), he displays a male pattern facing the female, and a female pattern facing away. Photo by <a href="http://bio.mq.edu.au/research/groups/beef/beef.html">Culum Brown</a>.</p>
+				</section>
+				<section>
+					<h2>What if could change your sex in real time? Part 2</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/YH1ytkBM69Q?rel=0" frameborder="0" allowfullscreen></iframe>
+				</section>
+				<section>
+					<h2>What if you didn't have to eat any more?</h2>
+					<p><img src="content/cassiopeaByChrisHind.jpg" width="50%" height="50%"></p>
+					<p>Photosynthesis! See <a href="https://en.wikipedia.org/wiki/Cassiopea">Cassiopeia</a>. Photo by Chris Hind.</p>
+				</section>
+				<section>
+					<h2>What if you could see directions like birds can?</h2>
+					<p><img src="content/bird-vision.jpg" width="50%" height="50%"></p>
+					<p>Augmented reality in nature! See <a href="http://www.ks.uiuc.edu/Research/cryptochrome/">Cryptochrome and Magnetic Sensing Research at University of Illinois at Urbana-Champaign</a>.</p>
+				</section>
+				<section>
+					<h2>You can splice qualities of other organisms onto yourself.</h2>
+					<p>What quality?</p>
+					<p>Why?</p>
+				</section>
+				<section>
+					<h2>Go!</h2>
+					<p>15 minutes thinking time, one minute presentation.</p>
+				</section>
+				<section>
+					<h2>Brief 4: Augmented Labels</h2>
+					<ol>
+						<li>How could you do the job of labelling in the museum using AR?</li>
+						<li>How would this change the museum?</li>
+						<li>What content would the labels have? Who would make it?</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Go!</h2>
+					<p>15 minutes thinking time, one minute presentation.</p>
+				</section>
+				<section>
+					<h2>Brief 5: Collection objects in the museum.</h2>
+					<ol>
+						<li>How you could you display the collection in a museum using AR?</li>
+						<li>How would this change the museum?</li>
+						<li>How would visitors interact with the collection? Curators? Researchers?</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Go!</h2>
+					<p>15 minutes thinking time, one minute presentation.</p>
+				</section>
+				<section>
+					<h2>Brief 6: Collection objects in the city.</h2>
+					<ol>
+						<li>How you could you display the collection outside of the museum using AR?</li>
+						<li>How would this change the museum?</li>
+						<li>How would visitors interact with the collection? Curators? Researchers?</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Go!</h2>
+					<p>15 minutes thinking time, one minute presentation.</p>
+				</section>
+				<section>
+					<h3>Discussion and wrap up.</h3>
+					<ol>
+						<li>Is this interesting?</li>
+						<li>Were the methods interesting?</li>
+						<li>What do you all think?</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Thanks!</h2>
+					<ul>
+						<li>More about me: <a href="https://twitter.com/joelgethinlewis">@joelgethinlewis</a></li>
+						<li>Get in contact via: <a href="https://www.joelgethinlewis.com/">www.joelgethinlewis.com</a></li>
+						<li>Website:<br><a href="https://jgl.github.io/MANEAR2018/">https://jgl.github.io/MANEAR2018</a></li>
+						<li>Today's slides:<br><a href="https://jgl.github.io/MANEAR2018/session1.html">https://jgl.github.io/MANEAR2018/session1.html</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// Push each slide change to the browser history
+				history: true,
+				// Display a presentation progress bar
+				progress: true,
+				// Display the page number of the current slide
+				slideNumber: 'c/t',
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
